@@ -1,0 +1,103 @@
+
+import random
+import string
+
+
+print('hello, Welcome to Password generator!')
+print('Alt Version Created by Nora')
+
+while True:
+    try:
+        len = int(input("Enter password length:"))
+        break
+    except ValueError:
+        print("Only numbers are allowed.")
+    continue
+print()
+
+
+#define data
+lower = string.ascii_lowercase
+upper = string.ascii_uppercase
+num = string.digits
+symbols = string.punctuation
+#string.ascii_letters
+
+#combine the data
+all = lower + num + symbols + upper
+
+#use random 
+temp = random.sample(all,len)
+
+#create the password 
+password = "".join(temp)
+
+
+
+all = string.ascii_letters + string.digits + string.punctuation
+
+# pass = "".join(random.sample(all,length))
+
+
+#print the password
+print(password)
+
+
+restart = input("Would you like to generate another one?")
+if input == "yes" or restart == "y":
+    print()
+if restart == "n" or restart == "no":
+    print ("Nora's PW Generator V0.1")
+    print ("exiting...")
+    exit()
+if input not in ("n", "no"):
+    print("Only 'no or n' is allowed to terminate the program.")
+    restart = input("Would you like to generate another one?")
+    if input == "yes" or restart == "y":
+        print()
+    if restart == "n" or restart == "no":
+        print ("Nora's PW Generator V0.1")
+        print ("exiting...")
+        exit()
+    
+
+
+
+while True:
+    try:
+        len = int(input("Enter password length:"))
+        break
+    except ValueError:
+        print("Only numbers are allowed.")
+    continue
+print()
+
+    
+        
+
+#define data
+lower = string.ascii_lowercase
+upper = string.ascii_uppercase
+num = string.digits
+symbols = string.punctuation
+#string.ascii_letters
+
+#combine the data
+all = lower + num + symbols + upper
+
+#use random 
+temp = random.sample(all,len)
+
+#create the password 
+password = "".join(temp)
+
+
+
+all = string.ascii_letters + string.digits + string.punctuation
+
+# pass = "".join(random.sample(all,length))
+
+
+#print the password
+print(password)
+
